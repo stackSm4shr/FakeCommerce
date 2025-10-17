@@ -1,7 +1,8 @@
 import { useOutletContext } from "react-router";
+import { Counter } from "../utils/Counter";
 
 export function Cart() {
-  const { destinations } = useOutletContext();
+  const { products } = useOutletContext();
   return (
     <div>
       <ul className="list">
@@ -22,11 +23,7 @@ export function Cart() {
           <div>
             <div>description</div>
           </div>
-          <div className="list-row">
-            <button className="btn btn-primary">-</button>
-            <p>Amount</p>
-            <button className="btn btn-primary">+</button>
-          </div>
+          <Counter />
           <div>
             <p>Total</p>
           </div>

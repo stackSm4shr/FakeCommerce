@@ -1,4 +1,5 @@
 import { FetchProducts } from "./FetchProduct.jsx";
+import { Counter } from "../utils/Counter.jsx";
 
 export function Product() {
   const { products, loading } = FetchProducts();
@@ -17,7 +18,7 @@ export function Product() {
             <p>{product.price} $</p>
             <p>{product.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+              <Counter />
             </div>
           </div>
         </div>
