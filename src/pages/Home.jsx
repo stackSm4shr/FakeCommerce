@@ -1,6 +1,7 @@
 import { useOutletContext } from "react-router";
+import { Product } from "../components/Product";
 
 export function Home() {
   const { destinations } = useOutletContext();
-  return <h1 className="text-2xl ">FakeCommerce</h1>;
+  return <Product />;
 }
